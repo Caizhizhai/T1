@@ -1,7 +1,7 @@
 # coding: utf-8
 #
 import pyttsx3
-
+import pytest
 
 def words_to_voice(words: str, language='CN'):
 
@@ -35,4 +35,4 @@ def test_TTS():
     print('TTS Done')
 
 if __name__ == '__main__':
-    test_TTS()
+    pytest.main([f'TTSpy.py', '-vs'])
